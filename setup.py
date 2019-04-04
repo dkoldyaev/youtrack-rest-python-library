@@ -24,7 +24,7 @@ try:
     with open(path.join(here, 'version')) as f:
         version = f.read().strip()
 except:
-    version = 0.0.1
+    version = '0.0.1'
 
 setup(
     name='youtrack',
