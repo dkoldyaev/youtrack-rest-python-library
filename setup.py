@@ -17,7 +17,7 @@ try:
     with open(path.join(here, 'README.rst')) as f:
         long_description = f.read()
 except:
-    pass
+    long_description = ''
 
 # Get version from file
 with open(path.join(here, 'version')) as f:
