@@ -13,8 +13,11 @@ except (ImportError, OSError, IOError, RuntimeError):
     pass
 
 # Get the long description from the relevant file
-with open(path.join(here, 'README.rst')) as f:
-    long_description = f.read()
+try:
+    with open(path.join(here, 'README.rst')) as f:
+        long_description = f.read()
+except:
+    pass
 
 # Get version from file
 with open(path.join(here, 'version')) as f:
