@@ -20,9 +20,11 @@ except:
     long_description = ''
 
 # Get version from file
-with open(path.join(here, 'version')) as f:
-    version = f.read().strip()
-
+try:
+    with open(path.join(here, 'version')) as f:
+        version = f.read().strip()
+except:
+    version = 0.0.1
 
 setup(
     name='youtrack',
